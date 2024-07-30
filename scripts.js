@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Autoplay first song
-    const audio = document.querySelector('audio');
-    if (audio) {
-        audio.play();
-    }
+    const audio = document.querySelector('#birthday-song');
+    audio.muted = true;  // Start muted to allow autoplay
+    audio.play().then(() => {
+        audio.muted = false;  // Unmute after playing starts
+    }).catch(error => {
+        console.log('Autoplay was prevented. Click anywhere to play the song.');
+        // Add an event listener to unmute and play on first user interaction
+        document.addEventListener('click', () => {
+            audio.muted = false;
+            audio.play();
+        }, { once: true });
+    });
 
     // Quotes array
     const quotes = [
