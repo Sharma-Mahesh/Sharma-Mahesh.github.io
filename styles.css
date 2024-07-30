@@ -1,0 +1,53 @@
+body {
+    background: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8c291;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+h1 {
+    color: #e55039;
+    margin-top: 30px;
+}
+
+img#cake {
+    width: 250px;
+    height: auto;
+}
+
+.balloon-container {
+    position: relative;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.balloon {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    background: radial-gradient(circle at bottom, #ff6b6b, #ff4757);
+    border-radius: 50% 50% 0 0;
+    animation: float 10s infinite ease-in-out;
+}
+
+.balloon1 { left: 10%; animation-delay: 0s; }
+.balloon2 { left: 30%; animation-delay: 2s; }
+.balloon3 { left: 50%; animation-delay: 4s; }
+.balloon4 { left: 70%; animation-delay: 6s; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+footer {
+    background-color: #f8c291;
+}
