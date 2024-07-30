@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Mitali!</title>
+    <title>Mitali's Website</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Main Content -->
     <div class="container text-center">
         <div class="my-5">
-            <h1 class="display-3 animated-heading">Happy Birthday, Mitali!</h1>
+            <h1 class="display-3 animated-heading" id="birthday-heading">Happy Birthday, Mitali!</h1>
             <p class="lead animated-text">Wishing you a day filled with joy, love, and laughter.</p>
             <img src="cake.webp" alt="Birthday Cake" class="img-fluid mb-4 animated-cake" id="cake">
         </div>
         
         <div class="my-5">
             <h2 class="animated-text">Birthday Quotes</h2>
-            <p class="lead animated-text">"Keep beautifying the atmosphere with your beautiful smile."</p>
-            <p class="lead animated-text">"May your day be filled with joy and your year with success."</p>
-            <p class="lead animated-text">"Your smile lights up every room, and your heart warms every soul."</p>
-            <p class="lead animated-text">"Wishing you all the happiness in the world today and always."</p>
-            <p class="lead animated-text">"You make every day brighter just by being you."</p>
+            <div id="quote-box" class="quote-box animated-quote">
+                <p class="lead" id="quote"></p>
+            </div>
         </div>
         
         <div class="my-5">
             <h2 class="animated-text">Songs Curated for You</h2>
-            <audio controls autoplay>
+            <audio id="birthday-song" controls autoplay>
                 <source src="song1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <ul class="list-unstyled mt-4">
+                <li><a href="#" class="song-link">Song 1</a></li>
                 <li><a href="#" class="song-link">Song 2</a></li>
                 <li><a href="#" class="song-link">Song 3</a></li>
                 <li><a href="#" class="song-link">Song 4</a></li>

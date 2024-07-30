@@ -4,7 +4,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
+#birthday-heading {
+    font-family: 'Pacifico', cursive;
     color: #e55039;
     animation: fadeInOut 3s infinite;
 }
@@ -19,10 +20,26 @@ img#cake {
     animation: bounce 2s infinite;
 }
 
-.balloon-container {
-    position: relative;
-    height: 300px;
-    margin-top: 30px;
+.quote-box {
+    border: 5px solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    animation: fadeInOut 6s infinite;
+}
+
+.animated-quote {
+    border-color: transparent;
+    animation: glowing-border 3s infinite, fadeInOut 6s infinite;
+}
+
+@keyframes glowing-border {
+    0% { border-color: red; }
+    25% { border-color: yellow; }
+    50% { border-color: green; }
+    75% { border-color: blue; }
+    100% { border-color: red; }
 }
 
 @keyframes bounce {
@@ -59,4 +76,3 @@ img#cake {
 footer {
     background-color: #f8c291;
 }
-
